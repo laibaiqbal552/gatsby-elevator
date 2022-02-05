@@ -1,8 +1,19 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
  import { FaFacebookF, FaTwitter, FaPinterestP,FaArrowUp } from "react-icons/fa";
 import footer from "./../../images/logo.png";
 import footerImg from "./../../images/footer.png"
 const Footer = () => {
+  const [aStateVariable, setAStateVariable] = useState(false);
+
+  const handleClick = () => {
+     setAStateVariable(true);
+  }
+  
+  useEffect(() => {
+    if(aStateVariable === true) {
+      window.scrollTo(0, 0)
+    }
+  }, [aStateVariable])
   return (
     <div className="bg-blueFooter  pt-20 ">
       <div className="inner-container text-textBlue pb-12">
@@ -103,7 +114,7 @@ const Footer = () => {
       </div>
       <div className="inner-container py-5 border-t relative border-footerBorder">
       <div className="absolute left-0 right-0 -top-5">
-      <div className=" bg-zincLight max-w-[30px] min-h-[30px] rounded-full items-center mx-auto flex justify-center">
+      <div onClick={handleClick} className=" cursor-pointer bg-zincLight max-w-[30px] min-h-[30px] rounded-full items-center mx-auto flex justify-center">
           <FaArrowUp className="text-white "/>
         </div>
       </div>
