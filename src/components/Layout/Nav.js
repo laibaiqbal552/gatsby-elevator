@@ -39,7 +39,7 @@ const Nav = () => {
             <button className="text-white text-2xl" onClick={toggleDrawer}>
               <GiHamburgerMenu />
             </button>
-            <Drawer open={isOpen} onClose={toggleDrawer} direction="top">
+            <Drawer open={isOpen} onClose={toggleDrawer} direction="left">
               <div className="bg-blueFooter text-textBlue h-full w-full my-10 px-5">
                 <Link href="/">
                   <a>
