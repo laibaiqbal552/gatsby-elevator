@@ -5,12 +5,12 @@ function SoftwareDeveloper() {
     <div className="bg-primary pt-14 pb-12">
       <div className="main-container">
         <div className="max-w-[940px] mx-auto text-white text-lg font-light">
-          <p className="mb-2 font-serif">
-            <span className="font-bold">Elevator3</span> is seeking a{" "}
-            <span className="font-bold">Software Developer</span> to join our
+          <p className="mb-2 f">
+            <span className="font-bold MyriadProBold">Elevator3</span> is seeking a{" "}
+            <span className="font-bold MyriadProBold">Software Developer</span> to join our
             growing team based in Baton Rouge and Hammond, Louisiana.
           </p>
-          <div className="mb-14 font-serif">
+          <div className="mb-14 MyriadProSemiBold">
             <p>
               We are a software consulting firm specializing in developing
               custom web and mobile applications for our clients in various
@@ -23,11 +23,11 @@ function SoftwareDeveloper() {
               development.
             </p>
           </div>
-          <div className="font-serif">
-            <h2 className="font-bold my-[10px]">
+          <div>
+            <h2 className="font-bold MyriadProBold my-[10px]">
               Job Responsibilities and Duties
             </h2>
-            <ul className="list-disc pl-10">
+            <ul className="list-disc MyriadProREGULAR pl-10">
               <li>
                 Produce clean, quality code based on project specifications
               </li>
@@ -51,9 +51,9 @@ function SoftwareDeveloper() {
               <li>Analyze and estimate development efforts</li>
             </ul>
           </div>
-          <div className="font-serif">
-            <h2 className="font-bold my-[10px]">Required Experience</h2>
-            <ul className="list-disc pl-10">
+          <div className="">
+            <h2 className="font-bold MyriadProBold my-[10px]">Required Experience</h2>
+            <ul className="list-disc MyriadProREGULAR pl-10">
               <li>3+ years of software development experience</li>
               <li>Familiarity with Agile development methodologies</li>
               <li>
@@ -69,9 +69,9 @@ function SoftwareDeveloper() {
               <li>Experience using Git</li>
             </ul>
           </div>
-          <div className="font-serif">
-            <h2 className="font-bold my-[10px]">Bonus Experience</h2>
-            <ul className="list-disc pl-10">
+          <div >
+            <h2 className="font-bold my-[10px] MyriadProBold">Bonus Experience</h2>
+            <ul className="list-disc MyriadProREGULAR pl-10">
               <li>Previous work in a consulting environment</li>
               <li>Mobile app development with React Native or Xamarin</li>
               <li>Working in a Scrum environment</li>
@@ -81,9 +81,9 @@ function SoftwareDeveloper() {
             </ul>
           </div>
 
-          <div className="font-serif">
-            <h2 className="font-bold my-[10px]">Desired Skills</h2>
-            <ul className="list-disc pl-10">
+          <div >
+            <h2 className="font-bold my-[10px] MyriadProBold">Desired Skills</h2>
+            <ul className="list-disc pl-10 MyriadProREGULAR">
               <li>Ability to lead a team of developers</li>
               <li>Ability to balance long and short-term priorities</li>
               <li>Excellent problem-solving and critical thinking skills</li>
@@ -99,9 +99,9 @@ function SoftwareDeveloper() {
               <li>Strong attention to detail</li>
             </ul>
           </div>
-          <div className="font-serif">
-            <h2 className="font-bold my-[10px]">What to Expect</h2>
-            <ul className="list-disc pl-10">
+          <div >
+            <h2 className="font-bold my-[10px] MyriadProBold">What to Expect</h2>
+            <ul className="list-disc pl-10 MyriadProREGULAR">
               <li>Continuous opportunities to grow professionally</li>
               <li>
                 Working with a team where everyone wants to learn and continue
@@ -113,9 +113,9 @@ function SoftwareDeveloper() {
               <li>Team-building activities</li>
             </ul>
           </div>
-          <div className="font-serif">
-            <h2 className="font-bold my-[10px]">Benefits</h2>
-            <ul className="list-disc pl-10">
+          <div >
+            <h2 className="font-bold MyriadProBold my-[10px]">Benefits</h2>
+            <ul className="list-disc MyriadProREGULAR pl-10">
               <li>Health insurance (company-paid premiums)</li>
               <li>Dental insurance</li>
               <li>Vision insurance</li>
@@ -126,7 +126,7 @@ function SoftwareDeveloper() {
               <li>Performance bonuses</li>
             </ul>
           </div>
-          <div className="font-serif mt-14">
+          <div className="MyriadProREGULAR mt-14">
             <p>
               If you are interested in this position, please email your resume
               to CAREERS@ELEVATOR3.COM.

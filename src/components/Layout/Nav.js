@@ -6,25 +6,25 @@ import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const Nav = () => {
+const Nav = ({ backgroundColor }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
   return (
-    <div className="w-full">
+    <div className="w-full" style={{ backgroundColor: backgroundColor }}>
       <div className=" max-w-[1560px] mx-auto px-3 md:px-10 ">
-        <div className="flex justify-between items-center w-full py-5">
+        <div className="flex justify-between self-center items-center w-full py-5">
           <Link href={`/`}>
             <a>
               <img src={Logo2} alt="logo" className="w-[200px]" />
             </a>
           </Link>
-          <ul className=" hidden md:flex ">
+          <ul className=" hidden md:flex self-center ">
             {links.map((link) => {
               const { id, text, url } = link;
               return (
-                <li key={id}>
+                <li key={id} className="flex self-center">
                   <Link href={url}>
                     <a className=" px-6 text-base text-white MyriadProSemiBold hover:text-white transition-all duration-300 ease-in-out capitalize">
                       {text}
@@ -33,9 +33,9 @@ const Nav = () => {
                 </li>
               );
             })}
-            <li className="pb-5">
+            <li>
               <Link href={"/"}>
-                <a className="capitalize text-[#00aff0] py-3 px-6 shadow-2xl rounded-tl-full rounded-bl-full rounded-tr-full MyriadProSemiBold bg-white  ">
+                <a className="capitalize text-[#00aff0] flex self-center py-3 px-6 shadow-2xl rounded-tl-full rounded-bl-full rounded-tr-full MyriadProSemiBold bg-white  ">
                   Contact
                 </a>
               </Link>

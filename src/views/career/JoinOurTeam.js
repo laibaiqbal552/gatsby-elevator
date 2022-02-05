@@ -6,14 +6,14 @@ function JoinOurTeam() {
       <div className="main-container">
         <div className="max-w-[940px] mx-auto">
           <div className="header-dash"></div>
-          <h1 className="text-[32px] text-center font-light text-white uppercase mt-6 mb-8">
+          <h1 className="text-[32px] MyriadProBold text-center font-light text-white uppercase mt-6 mb-8">
             JOIN OUR TEAM
           </h1>
           <div>
             <h1 className="underline text-grayLight uppercase text-2xl mb-4">
               SOFTWARE DEVELOPER
             </h1>
-            <p className="text-base text-grayLight leading-7 font-serif">
+            <p className="text-base MyriadProREGULAR text-grayLight leading-7 font-serif">
               Elevator3 is seeking a Software Developer to join our growing
               team. We're looking for someone that's passionate about creating
               meaningful software. This developer will work with other team

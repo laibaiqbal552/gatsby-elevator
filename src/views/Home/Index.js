@@ -8,7 +8,7 @@ import Trustedby from "./TrustedBy";
 function Index() {
   return (
     <div>
-      <Layout>
+      <Layout backgroundColor="transparent">
         <OurServices />
         <Aboutemersion />
         <OurRecentProjects />

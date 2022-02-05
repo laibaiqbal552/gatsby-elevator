@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary pt-10">
       <div className="main-container relative">
         <div className="bg-career bg-CareerBg h-[70vh] bg-cover md:bg-top bg-center bg-no-repeat">
           <div className="overlay">
