@@ -3,6 +3,15 @@ import Trust1 from "./../../images/trust1.png";
 import Trust2 from "./../../images/trust2.png";
 import Trust3 from "./../../images/trust3.png";
 import Trust4 from "./../../images/trust4.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/lazy";
+
+// import required modules
+import { Autoplay, Lazy } from "swiper";
 
 function Trustedby() {
     return (
@@ -11,10 +20,48 @@ function Trustedby() {
                 <div className="text-center mb-20">
                         <h1 className="sub-heading">Trusted by</h1>
                 </div>
-                <div className="grid lg:grid-cols-4  md:grid-cols-2 grid-cols-1 gap-10 mb-36">
-                {TrustedCards.map(({id,img1,title}) => {
+                <div className="">
+              <SliderTrusted/>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Trustedby;
+const SliderTrusted=()=>{
+    return(
+
+<div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+      <Swiper
+        breakpoints={{
+          slidesPerView: 1,
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        }}
+        spaceBetween={30}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        lazy={true}
+        modules={[Autoplay, Lazy]}
+        className="mySwiper "
+      >
+          {TrustedCards.map(({id,img1,title}) => {
                     return(
-                        <div key={id} className='bg-white py-6 rounded-md hover:shadow-lg'>
+                        <SwiperSlide key={id} className='bg-white py-6 rounded-md hover:shadow-lg'>
                             <div className='flex justify-center flex-col items-center'>
                                 <div className='mb-4'>
                                     <img src={img1} alt="" width="50" height="50" />
@@ -23,16 +70,13 @@ function Trustedby() {
                                     {title}
                                 </h2> 
                             </div>                          
-                        </div>
+                        </SwiperSlide>
                     )
                     }) }
-                </div>
-            </div>
-        </div>
-    );
+      </Swiper>
+    </div>
+    )
 }
-
-export default Trustedby;
 const TrustedCards=[
     {
         id:1,

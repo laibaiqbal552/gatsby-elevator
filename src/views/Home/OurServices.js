@@ -7,6 +7,15 @@ import Icon5 from "./../../images/services1.png";
 import Icon6 from "./../../images/services2.png";
 import Icon7 from "./../../images/services3.png";
 import Icon8 from "./../../images/services4.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/lazy";
+
+// import required modules
+import { Autoplay, Lazy } from "swiper";
 
 
 function OurServices() {
@@ -16,10 +25,48 @@ function OurServices() {
                 <div className="text-center mb-20">
                     <h1 className="sub-heading">Our Services</h1>
                 </div>
-                <div className="grid lg:grid-cols-4  md:grid-cols-2 grid-cols-1 gap-10">
-                {ServicesCards.map(({id,img1,title,desc,img2}) => {
+                <div className="">
+               <Slider/>
+                </div>
+
+            </div>
+        </div>
+    )
+}
+export default OurServices;
+const Slider=()=>{
+    return(
+
+<div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+      <Swiper
+        breakpoints={{
+          slidesPerView: 2,
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        }}
+        spaceBetween={30}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        lazy={true}
+        modules={[Autoplay, Lazy]}
+        className="mySwiper "
+      >
+        {ServicesCards.map(({id,img1,title,desc,img2}) => {
                     return(
-                        <div key={id}>
+                        <SwiperSlide key={id}>
                             <div className="services-grid ">
                                 <div className="flex justify-between ">
                                   <div className="">
@@ -34,16 +81,13 @@ function OurServices() {
                                     <img src={img2} alt="" className="w-full h-full"  />
                                 </div>
                             </div>
-                        </div>
+                        </SwiperSlide>
                     )
                     }) }
-                </div>
-
-            </div>
-        </div>
+      </Swiper>
+    </div>
     )
 }
-export default OurServices;
 const ServicesCards=[
     {
         id:1,
