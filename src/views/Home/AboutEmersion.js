@@ -3,21 +3,21 @@ import About from "./../../images/about-section.png";
 import AboutIcon from "./../../images/AboutIcon.png";
 function Aboutemersion() {
   return (
-    <div className="bg-blueDefault py-24">
-      <div className=" max-w-6xl mx-auto">
+    <div className="bg-blueDefault py-8 md:py-24">
+      <div className=" max-w-6xl mx-auto px-4">
         <div className="grid  grid-cols-1 lg:grid-cols-2 gap-9 ">
           <div>
             <img src={About} alt="" className="shadow-xl w-full" />
           </div>
           <div>
-            <div className="mb-5">
+            <div className="mb-5 flex justify-center md:justify-start">
               <img src={AboutIcon} alt="" />
             </div>
-            <h1 className="text-4xl MyriadProSemiBold text-headingblue mb-4">
+            <h1 className="text-4xl text-center md:text-left MyriadProSemiBold text-headingblue mb-4">
               About Emersion
               <br /> Technology
             </h1>
-            <p className="text-textBlue MyriadProREGULAR text-base">
+            <p className="text-textBlue text-center md:text-left MyriadProREGULAR text-base">
               Located in Baton Rouge, Emersion Technology is an IT consulting
               firm that strives to exceed our clients technology expectations
               everyday. Our team of engineers are not only here to develop the

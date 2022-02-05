@@ -24,7 +24,7 @@ const Footer = () => {
     <div className="bg-blueFooter  pt-24 ">
       <div className="inner-container text-textBlue pb-12">
         <div className="grid    grid-cols-1 lg:grid-cols-6 gap-7">
-          <div className="lg:border-r lg:border-white px-7 col-span-2">
+          <div className="lg:border-r lg:border-white px-7 md:col-span-2">
             <div className=" lg:mb-0 mb-5">
               <a href="/">
                 <div>
@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex justify-center">
+          <div className=" hidden md:flex justify-center">
             <div>
               <h5 className="footer-heading">Company</h5>
               <div className="pb-2">
@@ -63,7 +63,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className=" hidden md:flex justify-center">
             <div>
               <h5 className="footer-heading ">Emersion Services</h5>
               <div className="pb-2">
@@ -83,7 +83,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className=" hidden md:flex justify-center">
             <div>
               <h5 className="footer-heading">Team Solutions</h5>
               <div className="pb-2">
@@ -107,9 +107,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className=" flex justify-end ">
+          <div className=" flex justify-center md:justify-end ">
             <div>
-              <h5 className="footer-heading">Follow Us</h5>
+              <h5 className="footer-heading hidden md:block">Follow Us</h5>
               <div className="flex gap-4 mb-6 ">
                 <div className="fb-footer">
                   <FaFacebookF className="" />
@@ -124,13 +124,13 @@ const Footer = () => {
                   <FaPinterestP />
                 </div>
               </div>
-              <p className="text-zincLight">
+              <p className="text-zincLight text-center md:text-left">
                 <span className="text-footerLink MyriadProSemiBold">
                   Email:
                 </span>
                 support@domain.com
               </p>
-              <p className="MyriadProSemiBold">
+              <p className="MyriadProSemiBold text-center md:text-left">
                 <span className="text-footerLink MyriadProSemiBold">
                   Phone:
                 </span>
@@ -144,16 +144,16 @@ const Footer = () => {
         <div className="absolute left-0 right-0 -top-5">
           <div
             onClick={handleClick}
-            className=" cursor-pointer bg-zincLight max-w-[30px] min-h-[30px] rounded-full items-center mx-auto flex justify-center"
+            className=" cursor-pointer bg-zincLight max-w-[30px] min-h-[30px] rounded-full items-center mx-auto  hidden md:flex justify-center"
           >
             <FaArrowUp className="text-white " />
           </div>
         </div>
         <div className=" flex md:justify-between items-center justify-center md:flex-row flex-col">
           <div>
-            <p className="font-light MyriadProSemiBold text-gray md:text-xs text-[23px] text-center">
+            <p className="font-light MyriadProSemiBold text-gray md:text-xs  text-center">
               Copyright © 2021 Desing by
-              <span className="text-zincLight MyriadProSemiBold pl-0.5 font-semibold">
+              <span className="text-zincLight MyriadProSemiBold pl-1 font-semibold">
                 Emersion
               </span>
             </p>

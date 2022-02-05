@@ -17,12 +17,12 @@ function Trustedby() {
   return (
     <div className="bg-offWhite  md:pb-4 pb-0">
       <div className="inner-container">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6 md:mb-12">
           <h1 className="text-[36px] font-bold MyriadProSemiBold text-[#051441]">
             Trusted by
           </h1>
         </div>
-        <div className="grid lg:grid-cols-4  md:grid-cols-2 grid-cols-1 gap-10 mb-36">
+        <div className="grid lg:grid-cols-4  md:grid-cols-2 grid-cols-1 px-5 md:px-0 gap-10 mb-36">
           {TrustedCards.map(({ id, img1, title }) => {
             return (
               <div

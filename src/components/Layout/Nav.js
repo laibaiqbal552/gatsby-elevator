@@ -13,11 +13,11 @@ const Nav = () => {
   };
   return (
     <div className="w-full">
-      <div className="inner-container ">
+      <div className=" max-w-[1560px] mx-auto px-3 md:px-10 ">
         <div className="flex justify-between items-center w-full py-5">
           <Link href={`/`}>
             <a>
-              <img src={Logo2} alt="logo" width="228" height="32" />
+              <img src={Logo2} alt="logo" className="w-[200px]" />
             </a>
           </Link>
           <ul className=" hidden md:flex ">
@@ -35,13 +35,15 @@ const Nav = () => {
             })}
             <li className="pb-5">
               <Link href={"/"}>
-                <a className="capitalize text-[#00aff0] py-3 px-6 shadow-2xl rounded-tl-full rounded-bl-full rounded-tr-full MyriadProSemiBold bg-white  ">Contact</a>
+                <a className="capitalize text-[#00aff0] py-3 px-6 shadow-2xl rounded-tl-full rounded-bl-full rounded-tr-full MyriadProSemiBold bg-white  ">
+                  Contact
+                </a>
               </Link>
             </li>
           </ul>
 
           <div className="md:hidden block ">
-            <button className="text-white text-2xl" onClick={toggleDrawer}>
+            <button className="text-white text-[28px]" onClick={toggleDrawer}>
               <GiHamburgerMenu />
             </button>
             <Drawer open={isOpen} onClose={toggleDrawer} direction="left">
@@ -57,16 +59,18 @@ const Nav = () => {
                     return (
                       <li key={id} className="pb-5">
                         <Link href={url}>
-                          <a className="capitalize MyriadProSemiBold text-textBlue px-6 ">
+                          <a className="capitalize MyriadProSemiBold text-textBlue  ">
                             {text}
                           </a>
                         </Link>
                       </li>
                     );
                   })}
-                  <li className="pb-5">
+                  <li className="pt-5">
                     <Link href={"/"}>
-                      <a className="uppercase text-textBlue px-6 ">Contact</a>
+                      <a className="capitalize text-[#00aff0] py-3 px-6 shadow-2xl w-full flex text-center justify-center rounded-tl-full rounded-bl-full rounded-tr-full MyriadProSemiBold bg-white  ">
+                        Contact
+                      </a>
                     </Link>
                   </li>
                 </ul>

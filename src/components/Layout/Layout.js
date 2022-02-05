@@ -3,16 +3,13 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import Header from "./header";
 
-
 const Layout = ({ children }) => {
   return (
     <div>
       <div>
-        <Header/>
-        {/* <Nav /> */}
+        <Header />
       </div>
       {children}
-   
       <Footer />
     </div>
   );

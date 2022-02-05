@@ -3,22 +3,26 @@ import Recent from "./../../images/Recent.png";
 
 function OurRecentProjects() {
   return (
-    <div className="bg-offWhite pt-24 pb-20">
+    <div className="bg-offWhite pt-10 md:pt-24 pb-20">
       <div className="inner-container">
-        <div className="text-center mb-20">
+        <div className="text-center mb-6 md:mb-20">
           <h1 className="text-[30px] font-bold MyriadProSemiBold text-[#051441]">
             Our Recent Projects
           </h1>
         </div>
-        <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1  gap-8 mb-[70px]">
+        <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 px-4 md:px-0 gap-8 mb-[50px] md:mb-[70px]">
           {RecentProjectsCards.map(({ id, img1, title, desc }) => {
             return (
               <div key={id}>
                 <div className="mb-4">
                   <img src={img1} alt="" className="w-full" />
                 </div>
-                <h2 className="text-[28px] MyriadProREGULAR text-dark mb-2">{title}</h2>
-                <p className="text-textRecent MyriadProREGULAR text-[20px]">{desc}</p>
+                <h2 className=" text-[22px] md:text-[28px] MyriadProREGULAR text-dark mb-2">
+                  {title}
+                </h2>
+                <p className="text-textRecent MyriadProREGULAR text-[17px] md:text-[20px]">
+                  {desc}
+                </p>
               </div>
             );
           })}

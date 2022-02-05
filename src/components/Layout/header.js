@@ -5,12 +5,10 @@ function Header() {
   return (
     <div className="header-bgImg">
       <Nav />
-      <div className="inner-container">
-        <div className="max-w-[523px] mt-24 sm:text-left text-center ">
-          <h1 className="text-white MyriadProSemiBold font-bold lg:text-[48px] leading-[90px] md:text-4xl text-3xl  mb-20 ">
-            Software Beyond your
-            <br />
-            <span className="pt-5 block">Expectations</span>
+      <div className="max-w-[1560px] mx-auto px-3 md:px-10">
+        <div className="max-w-[523px] mt-[300px] md:mt-24 md:text-left text-center ">
+          <h1 className="text-white MyriadProSemiBold font-bold text-[28px] leading-[34px] sm:text-[36px] sm:leading-[42px] lg:text-[46px]  xl:leading-[60px]  mb-10  md:mb-20 ">
+            Software Beyond your Expectations
           </h1>
           <div>
             <a href="/" className="header_btn MyriadProSemiBold">
