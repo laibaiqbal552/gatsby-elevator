@@ -1,8 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "MyriadProLight";
+  src: url("./fonts/MyriadPro-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "MyriadProREGULAR";
+  src: url("./fonts/MYRIADPRO-REGULAR.woff") format("woff");
+}
+@font-face {
+  font-family: "MyriadProSemiBold";
+  src: url("./fonts/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("./fonts/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.MyriadProLight {
+  font-family: "MyriadProLight";
+}
+.MyriadProREGULAR {
+  font-family: "MyriadProREGULAR";
+}
+.MyriadProSemiBold {
+  font-family: "MyriadProSemiBold";
+}
+
+.MyriadProBold {
+  font-family: "MyriadProBold";
+}
+
 .main-container {
   @apply max-w-[1236px] mx-auto px-5;
 }
@@ -17,7 +53,6 @@
   width: 100%;
   height: 100%;
   padding: 144px 48px;
-
   flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -31,22 +66,23 @@
   text-align: center;
 }
 .inner-container {
-  @apply max-w-[1560px] mx-auto px-5;
+  @apply max-w-[1560px] mx-auto px-10;
 }
 .services-grid {
   @apply bg-white hover:border-[3px] md:max-w-full max-w-[400px] mx-auto hover:border-blueLight border-[3px] transition-all ease-in-out duration-300 border-white px-5 min-h-[400px] h-full py-3 flex flex-col  justify-between;
 }
-.sub-heading {
-  @apply text-[29px] text-headingblue;
+.sub_heading {
+  font-family: "MyriadProSemiBold";
+  @apply text-[30px] font-bold text-headingblue;
 }
 .bg-contact {
-  background-image: url('./../images/contactbg.png');
+  background-image: url("./../images/contactbg.png");
   @apply bg-no-repeat bg-cover;
 }
 .input-contact {
   @apply md:max-w-[327px] max-w-[100%] w-full focus:outline-none placeholder:text-base bg-transparent border border-white placeholder:text-white px-4 py-2 rounded-[4px] hover:bg-white hover:placeholder:text-grayLight hover:border-white;
 }
-.text_area{
+.text_area {
   @apply md:max-w-[677px] max-w-[100%] w-full focus:outline-none placeholder:text-base bg-transparent border border-white placeholder:text-white px-4 py-2 rounded-[4px] hover:bg-white hover:placeholder:text-grayLight hover:border-white;
 }
 .message {
@@ -56,11 +92,11 @@
   @apply text-footerHeading text-lg font-semibold mb-5;
 }
 .header-bgImg {
-  background-image: url('./../images/Homebg.png');
+  background-image: url("./../images/Banner.png");
   @apply bg-no-repeat bg-cover bg-center h-screen;
 }
-.header-btn {
-  @apply bg-white rounded-full px-4 py-2 text-[15px] text-zincLight;
+.header_btn {
+  @apply bg-white rounded-full px-10 py-[18px] text-[15px] text-[#00aff0];
 }
 .fb-footer {
   @apply bg-white hover:bg-facebook hover:text-white transition-all ease-in-out duration-300 rounded-full p-3 cursor-pointer;
