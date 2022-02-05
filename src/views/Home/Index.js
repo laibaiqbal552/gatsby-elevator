@@ -5,18 +5,17 @@ import Contact from "./Contact";
 import OurRecentProjects from "./OurRecentProjects";
 import OurServices from "./OurServices";
 import Trustedby from "./TrustedBy";
-function Index(){
-    return(
-        <div>
-            <Layout>
-            <OurServices/>
-            <Aboutemersion/>
-            <OurRecentProjects/>
-            <Trustedby/>
-            <Contact/>
-            </Layout>
-        </div>
-
-    )
+function Index() {
+  return (
+    <div>
+      <Layout>
+        <OurServices />
+        <Aboutemersion />
+        <OurRecentProjects />
+        <Trustedby />
+        <Contact />
+      </Layout>
+    </div>
+  );
 }
 export default Index;

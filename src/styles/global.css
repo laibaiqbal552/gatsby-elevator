@@ -24,6 +24,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "MyriadProREGULAR";
+}
 
 .MyriadProLight {
   font-family: "MyriadProLight";
@@ -69,7 +72,7 @@
   @apply max-w-[1560px] mx-auto px-10;
 }
 .services-grid {
-  @apply bg-white hover:border-[3px] md:max-w-full max-w-[400px] mx-auto hover:border-blueLight border-[3px] transition-all ease-in-out duration-300 border-white px-5 min-h-[400px] h-full py-3 flex flex-col  justify-between;
+  @apply bg-white hover:border-[3px] md:max-w-full max-w-[400px] mx-auto hover:border-blueLight border-[3px] transition-all ease-in-out duration-300 border-white px-6 min-h-[400px] h-full py-3 flex flex-col  justify-between;
 }
 .sub_heading {
   font-family: "MyriadProSemiBold";
@@ -80,16 +83,20 @@
   @apply bg-no-repeat bg-cover;
 }
 .input-contact {
-  @apply md:max-w-[327px] max-w-[100%] w-full focus:outline-none placeholder:text-base bg-transparent border border-white placeholder:text-white px-4 py-2 rounded-[4px] hover:bg-white hover:placeholder:text-grayLight hover:border-white;
+  font-family: "MyriadProSemiBold";
+  @apply md:max-w-[327px] max-w-[100%] w-full focus:outline-none placeholder:text-base bg-transparent border border-[#3fb2ea] placeholder:text-[#e3f2fb] px-4 py-4 rounded-[7px] text-[#b8b7cc] focus-within:bg-white focus-within:shadow-lg transition-all  focus-within:border-white;
 }
 .text_area {
-  @apply md:max-w-[677px] max-w-[100%] w-full focus:outline-none placeholder:text-base bg-transparent border border-white placeholder:text-white px-4 py-2 rounded-[4px] hover:bg-white hover:placeholder:text-grayLight hover:border-white;
+  font-family: "MyriadProSemiBold";
+  @apply md:max-w-[677px] max-w-[100%] w-full focus:outline-none placeholder:text-base bg-transparent border border-[#3fb2ea] placeholder:text-[#e3f2fb] px-4 py-4 rounded-[7px] text-[#b8b7cc] focus-within:bg-white focus-within:shadow-lg transition-all  focus-within:border-white;
 }
 .message {
-  @apply border text-base px-7 py-3 rounded-[4px] border-white hover:bg-white hover:text-grayLight text-white bg-transparent;
+  font-family: "MyriadProSemiBold";
+  @apply border-[2px] text-base px-12 py-3 rounded-[4px] border-[#80ccf1] hover:bg-white hover:text-grayLight text-white transition-all bg-transparent;
 }
 .footer-heading {
-  @apply text-footerHeading text-lg font-semibold mb-5;
+  font-family: "MyriadProSemiBold";
+  @apply text-footerHeading text-lg font-semibold mb-8;
 }
 .header-bgImg {
   background-image: url("./../images/Banner.png");

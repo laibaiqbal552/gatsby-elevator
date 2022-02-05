@@ -12,14 +12,14 @@ function OurServices() {
   return (
     <div className="bg-offWhite pt-24 pb-36">
       <div className="inner-container">
-        <div className="text-center mb-20">
+        <div className="text-center mb-[55px]">
           <h1 className="sub_heading">Our Services</h1>
         </div>
         <div className="grid lg:grid-cols-4  md:grid-cols-2 grid-cols-1 gap-10">
           {ServicesCards.map(({ id, img1, title, desc, img2 }) => {
             return (
               <div key={id}>
-                <div className="services-grid ">
+                <div className="services-grid shadow-xl ">
                   <div className="flex justify-between min-h-[80px]">
                     <div className="">
                       <h3 className="text-headingblue MyriadProSemiBold  text-[20px] leading-[24px] mt-3">
@@ -30,9 +30,9 @@ function OurServices() {
                       <img src={img1} alt="" width="104" height="104" />
                     </div>
                   </div>
-                  <p className="text-textBlue MyriadProREGULAR text-[15px] leading-[20px]">{desc}</p>
+                  <p className="text-textBlue MyriadProREGULAR text-[15px] leading-[20px] min-h-[120px]">{desc}</p>
                   <div className="flex justify-end self-end ">
-                    <img src={img2} alt="" className="w-full h-full" />
+                    <img src={img2} alt="" className="w-full" />
                   </div>
                 </div>
               </div>
@@ -54,7 +54,7 @@ const ServicesCards = [
   },
   {
     id: 2,
-    img1: Icon1,
+    img1: Icon2,
     title: "Custom Software Development",
     desc: "Looking to automate processes, cut your expenses, and make the process of doing business seamless? Let us build you a custom solution! ",
     img2: Icon6,
