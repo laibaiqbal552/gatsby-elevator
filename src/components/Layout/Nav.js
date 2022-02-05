@@ -26,13 +26,18 @@ const Nav = () => {
               return (
                 <li key={id}>
                   <Link href={url}>
-                    <a className=" px-8 text-base text-white hover:text-white transition-all duration-300 ease-in-out uppercase">
+                    <a className=" px-6 text-base text-white MyriadProSemiBold hover:text-white transition-all duration-300 ease-in-out capitalize">
                       {text}
                     </a>
                   </Link>
                 </li>
               );
             })}
+            <li className="pb-5">
+              <Link href={"/"}>
+                <a className="capitalize text-[#00aff0] py-3 px-6 shadow-2xl rounded-tl-full rounded-bl-full rounded-tr-full MyriadProSemiBold bg-white  ">Contact</a>
+              </Link>
+            </li>
           </ul>
 
           <div className="md:hidden block ">
@@ -52,11 +57,18 @@ const Nav = () => {
                     return (
                       <li key={id} className="pb-5">
                         <Link href={url}>
-                          <a className="uppercase text-textBlue px-8 ">{text}</a>
+                          <a className="capitalize MyriadProSemiBold text-textBlue px-6 ">
+                            {text}
+                          </a>
                         </Link>
                       </li>
                     );
                   })}
+                  <li className="pb-5">
+                    <Link href={"/"}>
+                      <a className="uppercase text-textBlue px-6 ">Contact</a>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </Drawer>
@@ -70,9 +82,8 @@ const Nav = () => {
 export default Nav;
 
 const links = [
-  { id: 1, text: "Services", url: "/Services" },
-  { id: 2, text: "Work", url: "/Work" },
-  { id: 3, text: "About", url: "/About" },
-  { id: 4, text: "Careers", url: "/Careers" },
-  { id: 5, text: "Contact", url: "/Contact" },
+  { id: 1, text: "About", url: "/about" },
+  { id: 2, text: "Services", url: "/services" },
+  { id: 3, text: "Projects", url: "/projects" },
+  { id: 4, text: "Careers", url: "/careers" },
 ];

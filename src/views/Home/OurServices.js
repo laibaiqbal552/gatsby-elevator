@@ -17,8 +17,8 @@ import "swiper/css/lazy";
 // import required modules
 import { Autoplay, Lazy } from "swiper";
 
-
 function OurServices() {
+<<<<<<< HEAD
     return(
         <div className="bg-offWhite pt-24 pb-36">
             <div className="inner-container" >
@@ -118,3 +118,70 @@ const ServicesCards=[
         img2:Icon8,
     }
 ]
+=======
+  return (
+    <div className="bg-offWhite pt-24 pb-36">
+      <div className="inner-container">
+        <div className="text-center mb-20">
+          <h1 className="sub_heading">Our Services</h1>
+        </div>
+        <div className="grid lg:grid-cols-4  md:grid-cols-2 grid-cols-1 gap-10">
+          {ServicesCards.map(({ id, img1, title, desc, img2 }) => {
+            return (
+              <div key={id}>
+                <div className="services-grid ">
+                  <div className="flex justify-between min-h-[80px]">
+                    <div className="">
+                      <h3 className="text-headingblue MyriadProSemiBold  text-[20px] leading-[24px] mt-3">
+                        {title}
+                      </h3>
+                    </div>
+                    <div className="max-w-[70px] w-full">
+                      <img src={img1} alt="" width="104" height="104" />
+                    </div>
+                  </div>
+                  <p className="text-textBlue MyriadProREGULAR text-[15px] leading-[20px]">{desc}</p>
+                  <div className="flex justify-end self-end ">
+                    <img src={img2} alt="" className="w-full h-full" />
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+export default OurServices;
+const ServicesCards = [
+  {
+    id: 1,
+    img1: Icon1,
+    title: "Staff Aug ",
+    desc: "Need Software Developers to staff your next project? Our diverse team of engineers come from all different types of backgrounds!",
+    img2: Icon5,
+  },
+  {
+    id: 2,
+    img1: Icon1,
+    title: "Custom Software Development",
+    desc: "Looking to automate processes, cut your expenses, and make the process of doing business seamless? Let us build you a custom solution! ",
+    img2: Icon6,
+  },
+  {
+    id: 3,
+    img1: Icon3,
+    title: "Data Analytics",
+    desc: "Want to leverage your data to make more informed business decisions? Or maybe you need help collecting and organizing your data. Let our analyst find those trends!",
+    img2: Icon7,
+  },
+  {
+    id: 4,
+    img1: Icon4,
+    title: "Startup Consulting",
+    desc: "Building a software startup company? Need some direction in what technologies to you or some oversight on product development. You’ve come to the right place!",
+    img2: Icon8,
+  },
+];
+>>>>>>> 8ab761818a676b96cec1361fe19c43b36c173170
