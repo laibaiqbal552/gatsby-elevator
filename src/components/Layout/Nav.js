@@ -40,7 +40,7 @@ const Nav = () => {
               <GiHamburgerMenu />
             </button>
             <Drawer open={isOpen} onClose={toggleDrawer} direction="left">
-              <div className="bg-blueFooter text-textBlue h-full w-full my-10 px-5">
+              <div className="bg-blueFooter text-textBlue h-full w-full pt-6 mb-10 px-5">
                 <Link href="/">
                   <a>
                     <img src={Logo2} alt="logo" />
