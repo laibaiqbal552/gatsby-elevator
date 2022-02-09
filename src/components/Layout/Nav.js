@@ -12,7 +12,7 @@ const Nav = ({ backgroundColor }) => {
     setIsOpen((prevState) => !prevState);
   };
   const handleSticky = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 40) {
       setSticky(true);
     } else {
       setSticky(false);
@@ -26,9 +26,9 @@ const Nav = ({ backgroundColor }) => {
     <div
       className={`${
         sticky
-          ? "fixed -top-24 inset-x-0 translate-y-24 bg-blueFooter"
-          : "translate-y-0"
-      } transition-all duration-500 ease-in-out z-50 px-5 w-full`}
+          ? "sticky -top-24 inset-x-0 translate-y-24 duration-500 bg-blueFooter"
+          : "translate-y-0 duration-300"
+      } transition-all  ease-in-out z-50  w-full`}
     >
       <div className="w-full" style={{ backgroundColor: backgroundColor }}>
         <div className=" max-w-[1560px] mx-auto px-3 md:px-10 ">
