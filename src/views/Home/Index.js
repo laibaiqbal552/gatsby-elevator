@@ -5,10 +5,12 @@ import Contact from "./Contact";
 import OurRecentProjects from "./OurRecentProjects";
 import OurServices from "./OurServices";
 import Trustedby from "./TrustedBy";
+import Header from "./header";
 function Index() {
   return (
     <div>
-      <Layout backgroundColor="transparent">
+      <Layout>
+        <Header />
         <OurServices />
         <Aboutemersion />
         <OurRecentProjects />
