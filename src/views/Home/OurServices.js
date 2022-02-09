@@ -34,34 +34,10 @@ function OurServices() {
 export default OurServices;
 const Slider = () => {
   return (
-    <Swiper
-      breakpoints={{
-        slidesPerView: 2,
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 25,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 10,
-        },
-      }}
-      autoplay={{
-        delay: 1500,
-        disableOnInteraction: false,
-      }}
-      loop={true}
-      lazy={true}
-      modules={[Autoplay, Lazy]}
-      className="mySwiper "
-    >
+    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
       {ServicesCards.map(({ id, img1, title, desc, img2 }) => {
         return (
-          <SwiperSlide key={id} className=" px-4 md:px-0 pb-10">
+          <div key={id} className=" px-4 md:px-0 pb-10">
             <div className="services-grid shadow-lg ">
               <div className="flex justify-between min-h-[80px]">
                 <div className="">
@@ -80,10 +56,10 @@ const Slider = () => {
                 <img src={img2} alt="" className="w-full" />
               </div>
             </div>
-          </SwiperSlide>
+          </div>
         );
       })}
-    </Swiper>
+    </div>
   );
 };
 const ServicesCards = [
